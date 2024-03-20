@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ShoesFragment">
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#00BCD4"
         android:paddingTop="20dp"
-        android:text="Shoes Fragment"
+        android:text="Shoe Fragment"
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold" />
 
-</FrameLayout>
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:columnWidth="100dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"/>
+
+</LinearLayout>

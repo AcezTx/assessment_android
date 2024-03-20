@@ -26,7 +26,7 @@ public class ShoesFragment extends Fragment {
         GridView gridView = rootView.findViewById(R.id.grid_view);
 
         // Resource IDs for the images
-        Integer[] imageIds = {R.drawable.s1, R.drawable.s2, R.drawable.s3, R.drawable.s4, R.drawable.s5};
+        Integer[] imageIds = {R.drawable.s1, R.drawable.s2, R.drawable.s3, R.drawable.s4, R.drawable.s5, R.drawable.s6, R.drawable.s7,};
 
         // Set up the custom adapter for the grid view
         ImageAdapter adapter = new ImageAdapter(requireContext(), Arrays.asList(imageIds));
